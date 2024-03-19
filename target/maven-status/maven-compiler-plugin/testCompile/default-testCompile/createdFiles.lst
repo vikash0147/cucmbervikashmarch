@@ -1,0 +1,8 @@
+pageFactory\HomePageFactory.class
+runner\Testrunner.class
+baseTest\BaseTest.class
+pageFactory\LoginPageFactory.class
+stepdefnitions\PageFactoryLoginStepsDefinition.class
+pageObjects\LoginPage.class
+stepdefnitions\Hookstags.class
+runner\TestrunnerForTags.class
