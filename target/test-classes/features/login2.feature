@@ -15,4 +15,4 @@ Feature: Free CRM login feature
       | username         						| password 			| firstname | lastname | position |
       | standard_user    						| secret_sauce 	| Tom       | Peter    | Manager  |
       | problem_user                | secret_sauce  | Tommy     |Dsouza    | Director |
-      | performance_glitch_user1     | secret_sauce  | David     | Dsouza   | Director |
+      | performance_glitch_user     | secret_sauce  | David     | Dsouza   | Director |
