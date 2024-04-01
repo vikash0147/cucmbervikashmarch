@@ -2,18 +2,14 @@ package stepdefnitions;
 
 import java.time.Duration;
 
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
-
-import baseTest.BaseTest;
+import baseTest.DriverFactory;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import pageFactory.HomePageFactory;
 import pageFactory.LoginPageFactory;
 
-public class PageFactoryLoginStepsDefinition extends BaseTest {
-	
+public class PageFactoryLoginStepsDefinition  {	
 	
 
 	
@@ -22,11 +18,13 @@ public class PageFactoryLoginStepsDefinition extends BaseTest {
 	
 	@Given("^user is already on login page$")
 	public void user_is_already_on_login_page() {
-	
-		driver.get("https://www.saucedemo.com/");
+		
+		System.out.println("thread id :-"+ Thread.currentThread().threadId());
+			
+		DriverFactory.getDriver().get("https://www.saucedemo.com/");
 		
 		//https://www.saucedemo.com/v1/
-		https://www.saucedemo.com/
+		//https://www.saucedemo.com/
 		
 		System.out.println("user is already on login page");
 		
@@ -39,7 +37,7 @@ public class PageFactoryLoginStepsDefinition extends BaseTest {
 
 	@Then("user enters {string} and {string}")
 	public void user_enters_and(String arg1, String arg2) throws InterruptedException  {
-		lp = new LoginPageFactory(driver);
+		lp = new LoginPageFactory(DriverFactory.getDriver());
 		lp.enterUserName(arg1);
 		Thread.sleep(Duration.ofSeconds(1));
 		lp.enterPassword(arg2);
@@ -65,7 +63,7 @@ public class PageFactoryLoginStepsDefinition extends BaseTest {
 //		Assert.assertTrue(i>0);
 		
 		lp.isAppLogoDisplayed();
-		hp = new HomePageFactory(driver);
+		hp = new HomePageFactory(DriverFactory.getDriver());
 		hp.shoppingcarIsDisplayed();
 		
 		

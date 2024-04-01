@@ -2,34 +2,36 @@ package stepdefnitions;
 
 import java.io.File;
 import java.io.IOException;
-import java.time.Duration;
 
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
 
-import baseTest.BaseTest;
+import baseTest.DriverFactory;
 import io.cucumber.java.After;
 import io.cucumber.java.AfterStep;
 import io.cucumber.java.Before;
 import io.cucumber.java.Scenario;
 
-public class Hookstags extends BaseTest {
-	
-
+public class Hookstags  {
+private DriverFactory driverFactory;
+	private WebDriver driver;
 	@Before
-	public void browserinit() {
-		driver = new ChromeDriver();
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+	public void launchBrowser() {
+	
+		
+		  driverFactory = new DriverFactory(); driver =
+		  driverFactory.init_driver("chrome");
+		 
+		
 		
 	}
-
+	
 	@After
-	public void teardown(Scenario sc)
+	public void AfterScenario(Scenario sc)
 	{
-		System.out.println("Tear Down method executed..");
+		System.out.println("AfterScenario method executed..");
 		if(sc.isFailed()==false)
 		{
 			//Convert web driver object to TakeScreenshot
@@ -58,9 +60,9 @@ public class Hookstags extends BaseTest {
 
 
 	@AfterStep
-	public void teardown1(Scenario sc)
+	public void afterStepmethod(Scenario sc)
 	{
-		System.out.println("Tear Down method executed..");
+		System.out.println("afterStepmethod executed..");
 		
 		//Convert web driver object to TakeScreenshot
 		TakesScreenshot scrShot =((TakesScreenshot)driver);

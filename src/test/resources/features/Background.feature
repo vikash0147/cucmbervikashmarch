@@ -1,6 +1,6 @@
-Feature: Free CRM login feature
+Feature: Free CRM login feature with Background
 
-Background: Login into sauce demo
+Background: Login into sauce demo background
 		Given user is already on login page
     When title of login page is Free CRM
    
@@ -16,5 +16,5 @@ Background: Login into sauce demo
     Examples: 
       | username         						| password 			| firstname | lastname | position |
       | standard_user    						| secret_sauce 	| Tom       | Peter    | Manager  |
-      | problem_user                | secret_sauce  | Tommy     |Dsouza    | Director |
+      | problem_user1                | secret_sauce  | Tommy     |Dsouza    | Director |
       | performance_glitch_user     | secret_sauce  | David     | Dsouza   | Director |

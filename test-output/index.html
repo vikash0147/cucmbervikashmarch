@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,8 +38,8 @@
       <div class="suite">
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
-            <a href="#" panel-name="suite-Default_suite" class="navigator-link">
-              <span class="suite-name border-failed">Default suite</span>
+            <a href="#" panel-name="suite-Suite" class="navigator-link">
+              <span class="suite-name border-failed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -49,37 +49,37 @@
             <div class="suite-section-content">
               <ul>
                 <li>
-                  <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\Admin\AppData\Local\Temp\testng-eclipse--2046177819\testng-customsuite.xml</span>
+                  <a href="#" panel-name="test-xml-Suite" class="navigator-link ">
+                    <span>C:\Users\Admin\eclipse-workspace\cucmbervikashmarch\testng.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="testlist-Default_suite" class="navigator-link ">
+                  <a href="#" panel-name="testlist-Suite" class="navigator-link ">
                     <span class="test-stats">1 test</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="group-Default_suite" class="navigator-link ">
+                  <a href="#" panel-name="group-Suite" class="navigator-link ">
                     <span>1 group</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="times-Default_suite" class="navigator-link ">
+                  <a href="#" panel-name="times-Suite" class="navigator-link ">
                     <span>Times</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="reporter-Default_suite" class="navigator-link ">
+                  <a href="#" panel-name="reporter-Suite" class="navigator-link ">
                     <span>Reporter output</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="ignored-methods-Default_suite" class="navigator-link ">
+                  <a href="#" panel-name="ignored-methods-Suite" class="navigator-link ">
                     <span>Ignored methods</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="chronological-Default_suite" class="navigator-link ">
+                  <a href="#" panel-name="chronological-Suite" class="navigator-link ">
                     <span>Chronological view</span>
                   </a> <!-- navigator-link  -->
                 </li>
@@ -92,55 +92,74 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">6 methods, 2 failed,   4 passed</span>
+                    <span class="method-stats">8 methods, 1 failed,  2 skipped,  5 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
                     <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-Default_suite" class="hide-methods failed suite-Default_suite"> (hide)</a> <!-- hide-methods failed suite-Default_suite -->
-                      <a href="#" panel-name="suite-Default_suite" class="show-methods failed suite-Default_suite"> (show)</a> <!-- show-methods failed suite-Default_suite -->
+                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
                     </span>
-                    <div class="method-list-content failed suite-Default_suite">
+                    <div class="method-list-content failed suite-Suite">
                       <span>
                         <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="runner.Testrunner" class="method navigator-link" hash-for-method="runScenario(&quot;Login into sauce demo&quot;, &quot;Free CRM login feature&quot;)">runScenario("Login into sauce demo", "Free CRM login feature")</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="runner.Testrunner" class="method navigator-link" hash-for-method="runScenario(&quot;Login into sauce demo&quot;, &quot;Free CRM login feature with Background&quot;)">runScenario("Login into sauce demo", "Free CRM login feature with Background")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title skipped">Retried methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods skipped suite-Suite"> (hide)</a> <!-- hide-methods skipped suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods skipped suite-Suite"> (show)</a> <!-- show-methods skipped suite-Suite -->
+                    </span>
+                    <div class="method-list-content skipped suite-Suite">
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="runner.Testrunner" class="method navigator-link" hash-for-method="runScenario(&quot;Login into sauce demo&quot;, &quot;Free CRM login feature with Background&quot;)">runScenario("Login into sauce demo", "Free CRM login feature with Background")</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="runner.Testrunner" class="method navigator-link" hash-for-method="runScenario(&quot;Free CRM login test Sceanrio&quot;, &quot;Free CRM login feature&quot;)">runScenario("Free CRM login test Sceanrio", "Free CRM login feature")</a> <!-- method navigator-link -->
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="runner.Testrunner" class="method navigator-link" hash-for-method="runScenario(&quot;Login into sauce demo&quot;, &quot;Free CRM login feature with Background&quot;)">runScenario("Login into sauce demo", "Free CRM login feature with Background")</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content failed suite-Default_suite -->
+                    </div> <!-- method-list-content skipped suite-Suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
                     <span class="show-or-hide-methods passed">
-                      <a href="#" panel-name="suite-Default_suite" class="hide-methods passed suite-Default_suite"> (hide)</a> <!-- hide-methods passed suite-Default_suite -->
-                      <a href="#" panel-name="suite-Default_suite" class="show-methods passed suite-Default_suite"> (show)</a> <!-- show-methods passed suite-Default_suite -->
+                      <a href="#" panel-name="suite-Suite" class="hide-methods passed suite-Suite"> (hide)</a> <!-- hide-methods passed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
                     </span>
-                    <div class="method-list-content passed suite-Default_suite">
+                    <div class="method-list-content passed suite-Suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="runner.Testrunner" class="method navigator-link" hash-for-method="runScenario(&quot;Login into sauce demo&quot;, &quot;Free CRM login feature&quot;)">runScenario("Login into sauce demo", "Free CRM login feature")</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="runner.Testrunner" class="method navigator-link" hash-for-method="runScenario(&quot;Free CRM login test Sceanrio&quot;, &quot;Free CRM login feature without Background&quot;)">runScenario("Free CRM login test Sceanrio", "Free CRM login feature without Background")</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="runner.Testrunner" class="method navigator-link" hash-for-method="runScenario(&quot;Free CRM login test Sceanrio&quot;, &quot;Free CRM login feature&quot;)">runScenario("Free CRM login test Sceanrio", "Free CRM login feature")</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="runner.Testrunner" class="method navigator-link" hash-for-method="runScenario(&quot;Login into sauce demo&quot;, &quot;Free CRM login feature with Background&quot;)">runScenario("Login into sauce demo", "Free CRM login feature with Background")</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="runner.Testrunner" class="method navigator-link" hash-for-method="runScenario(&quot;Free CRM login test Sceanrio&quot;, &quot;Free CRM login feature&quot;)">runScenario("Free CRM login test Sceanrio", "Free CRM login feature")</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="runner.Testrunner" class="method navigator-link" hash-for-method="runScenario(&quot;Free CRM login test Sceanrio&quot;, &quot;Free CRM login feature without Background&quot;)">runScenario("Free CRM login test Sceanrio", "Free CRM login feature without Background")</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="runner.Testrunner" class="method navigator-link" hash-for-method="runScenario(&quot;Login into sauce demo&quot;, &quot;Free CRM login feature&quot;)">runScenario("Login into sauce demo", "Free CRM login feature")</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="runner.Testrunner" class="method navigator-link" hash-for-method="runScenario(&quot;Free CRM login test Sceanrio&quot;, &quot;Free CRM login feature without Background&quot;)">runScenario("Free CRM login test Sceanrio", "Free CRM login feature without Background")</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content passed suite-Default_suite -->
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="runner.Testrunner" class="method navigator-link" hash-for-method="runScenario(&quot;Login into sauce demo&quot;, &quot;Free CRM login feature with Background&quot;)">runScenario("Login into sauce demo", "Free CRM login feature with Background")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Suite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -151,8 +170,8 @@
     </div> <!-- navigator-root -->
     <div class="wrapper">
       <div class="main-panel-root">
-        <div panel-name="suite-Default_suite" class="panel Default_suite">
-          <div class="suite-Default_suite-class-failed">
+        <div panel-name="suite-Suite" class="panel Suite">
+          <div class="suite-Suite-class-failed">
             <div class="main-panel-header rounded-window-top">
               <img src="failed.png"/>
               <span class="class-name">runner.Testrunner</span>
@@ -160,89 +179,129 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="runScenario(&quot;Login into sauce demo&quot;, &quot;Free CRM login feature&quot;)">
-                  </a> <!-- runScenario("Login into sauce demo", "Free CRM login feature") -->
+                  <a name="runScenario(&quot;Login into sauce demo&quot;, &quot;Free CRM login feature with Background&quot;)">
+                  </a> <!-- runScenario("Login into sauce demo", "Free CRM login feature with Background") -->
                   <span class="method-name">runScenario</span>
-                  <span class="parameters">("Login into sauce demo","Free CRM login feature")</span>
+                  <span class="parameters">("Login into sauce demo","Free CRM login feature with Background")</span>
                   <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@class=&apos;app_logo&apos;]&quot;}
-  (Session info: chrome=122.0.6261.129)
+  (Session info: chrome=123.0.6312.86)
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: &apos;4.18.1&apos;, revision: &apos;b1d3319b48&apos;
+Build info: version: &apos;4.19.0&apos;, revision: &apos;5f9cec8963&apos;
 System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.2&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [fc86d75940fbd30810138d4987f7cbac, findElement {using=xpath, value=//*[@class=&apos;app_logo&apos;]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 122.0.6261.129, chrome: {chromedriverVersion: 122.0.6261.128 (f18a44fedeb..., userDataDir: C:\Users\Admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65377}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65377/devtoo..., se:cdpVersion: 122.0.6261.129, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: fc86d75940fbd30810138d4987f7cbac
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+Command: [6ddd01c27a6e87afdca35205ef7979ef, findElement {value=//*[@class=&apos;app_logo&apos;], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 123.0.6312.86, chrome: {chromedriverVersion: 123.0.6312.86 (9b72c47a0536..., userDataDir: C:\Users\Admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61147}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61147/devtoo..., se:cdpVersion: 123.0.6312.86, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 6ddd01c27a6e87afdca35205ef7979ef
 	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
 	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
 	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
 	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:356)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
 	at jdk.proxy2/jdk.proxy2.$Proxy29.isDisplayed(Unknown Source)
 	at pageFactory.LoginPageFactory.isAppLogoDisplayed(LoginPageFactory.java:52)
-	at stepdefnitions.PageFactoryLoginStepsDefinition.user_is_on_home_page(PageFactoryLoginStepsDefinition.java:67)
+	at stepdefnitions.PageFactoryLoginStepsDefinition.user_is_on_home_page(PageFactoryLoginStepsDefinition.java:65)
 	at ✽.user is on home page(file:///C:/Users/Admin/eclipse-workspace/cucmbervikashmarch/src/test/resources/features/Background.feature:10)
-
+... Removed 3 stack frames
 </div> <!-- stack-trace -->
                   <em>
-(Runs Cucumber Scenarios)                  </em>
+(Runs cucumber Features)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">runner.Testrunner</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Login into sauce demo&quot;, &quot;Free CRM login feature with Background&quot;)">
+                  </a> <!-- runScenario("Login into sauce demo", "Free CRM login feature with Background") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Login into sauce demo","Free CRM login feature with Background")</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@class=&apos;app_logo&apos;]&quot;}
+  (Session info: chrome=123.0.6312.86)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.19.0&apos;, revision: &apos;5f9cec8963&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [e9eaadb20732636da521c9790fa49618, findElement {value=//*[@class=&apos;app_logo&apos;], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 123.0.6312.86, chrome: {chromedriverVersion: 123.0.6312.86 (9b72c47a0536..., userDataDir: C:\Users\Admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61051}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61051/devtoo..., se:cdpVersion: 123.0.6312.86, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: e9eaadb20732636da521c9790fa49618
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy29.isDisplayed(Unknown Source)
+	at pageFactory.LoginPageFactory.isAppLogoDisplayed(LoginPageFactory.java:52)
+	at stepdefnitions.PageFactoryLoginStepsDefinition.user_is_on_home_page(PageFactoryLoginStepsDefinition.java:65)
+	at ✽.user is on home page(file:///C:/Users/Admin/eclipse-workspace/cucmbervikashmarch/src/test/resources/features/Background.feature:10)
+... Removed 3 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Runs cucumber Features)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="runScenario(&quot;Free CRM login test Sceanrio&quot;, &quot;Free CRM login feature&quot;)">
-                  </a> <!-- runScenario("Free CRM login test Sceanrio", "Free CRM login feature") -->
+                  <a name="runScenario(&quot;Login into sauce demo&quot;, &quot;Free CRM login feature with Background&quot;)">
+                  </a> <!-- runScenario("Login into sauce demo", "Free CRM login feature with Background") -->
                   <span class="method-name">runScenario</span>
-                  <span class="parameters">("Free CRM login test Sceanrio","Free CRM login feature")</span>
+                  <span class="parameters">("Login into sauce demo","Free CRM login feature with Background")</span>
                   <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@class=&apos;app_logo&apos;]&quot;}
-  (Session info: chrome=122.0.6261.129)
+  (Session info: chrome=123.0.6312.86)
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: &apos;4.18.1&apos;, revision: &apos;b1d3319b48&apos;
+Build info: version: &apos;4.19.0&apos;, revision: &apos;5f9cec8963&apos;
 System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.2&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [fd8680663988b6d8bdc528d9aea120be, findElement {using=xpath, value=//*[@class=&apos;app_logo&apos;]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 122.0.6261.129, chrome: {chromedriverVersion: 122.0.6261.128 (f18a44fedeb..., userDataDir: C:\Users\Admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65499}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65499/devtoo..., se:cdpVersion: 122.0.6261.129, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: fd8680663988b6d8bdc528d9aea120be
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+Command: [707acc9a5b84a09d590fede1a8ea0a6c, findElement {value=//*[@class=&apos;app_logo&apos;], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 123.0.6312.86, chrome: {chromedriverVersion: 123.0.6312.86 (9b72c47a0536..., userDataDir: C:\Users\Admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60966}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60966/devtoo..., se:cdpVersion: 123.0.6312.86, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 707acc9a5b84a09d590fede1a8ea0a6c
 	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
 	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
 	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
 	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:356)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
 	at jdk.proxy2/jdk.proxy2.$Proxy29.isDisplayed(Unknown Source)
 	at pageFactory.LoginPageFactory.isAppLogoDisplayed(LoginPageFactory.java:52)
-	at stepdefnitions.PageFactoryLoginStepsDefinition.user_is_on_home_page(PageFactoryLoginStepsDefinition.java:67)
-	at ✽.user is on home page(file:///C:/Users/Admin/eclipse-workspace/cucmbervikashmarch/src/test/resources/features/login2.feature:9)
-
+	at stepdefnitions.PageFactoryLoginStepsDefinition.user_is_on_home_page(PageFactoryLoginStepsDefinition.java:65)
+	at ✽.user is on home page(file:///C:/Users/Admin/eclipse-workspace/cucmbervikashmarch/src/test/resources/features/Background.feature:10)
+... Removed 3 stack frames
 </div> <!-- stack-trace -->
                   <em>
-(Runs Cucumber Scenarios)                  </em>
+(Runs cucumber Features)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Default_suite-class-failed -->
-          <div class="suite-Default_suite-class-passed">
+          </div> <!-- suite-Suite-class-skipped -->
+          <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
               <span class="class-name">runner.Testrunner</span>
@@ -250,80 +309,93 @@ Session ID: fd8680663988b6d8bdc528d9aea120be
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="runScenario(&quot;Login into sauce demo&quot;, &quot;Free CRM login feature&quot;)">
-                  </a> <!-- runScenario("Login into sauce demo", "Free CRM login feature") -->
+                  <a name="runScenario(&quot;Free CRM login test Sceanrio&quot;, &quot;Free CRM login feature without Background&quot;)">
+                  </a> <!-- runScenario("Free CRM login test Sceanrio", "Free CRM login feature without Background") -->
                   <span class="method-name">runScenario</span>
-                  <span class="parameters">("Login into sauce demo","Free CRM login feature")</span>
+                  <span class="parameters">("Free CRM login test Sceanrio","Free CRM login feature without Background")</span>
                   <em>
-(Runs Cucumber Scenarios)                  </em>
+(Runs cucumber Features)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="runScenario(&quot;Free CRM login test Sceanrio&quot;, &quot;Free CRM login feature&quot;)">
-                  </a> <!-- runScenario("Free CRM login test Sceanrio", "Free CRM login feature") -->
+                  <a name="runScenario(&quot;Login into sauce demo&quot;, &quot;Free CRM login feature with Background&quot;)">
+                  </a> <!-- runScenario("Login into sauce demo", "Free CRM login feature with Background") -->
                   <span class="method-name">runScenario</span>
-                  <span class="parameters">("Free CRM login test Sceanrio","Free CRM login feature")</span>
+                  <span class="parameters">("Login into sauce demo","Free CRM login feature with Background")</span>
                   <em>
-(Runs Cucumber Scenarios)                  </em>
+(Runs cucumber Features)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="runScenario(&quot;Free CRM login test Sceanrio&quot;, &quot;Free CRM login feature&quot;)">
-                  </a> <!-- runScenario("Free CRM login test Sceanrio", "Free CRM login feature") -->
+                  <a name="runScenario(&quot;Free CRM login test Sceanrio&quot;, &quot;Free CRM login feature without Background&quot;)">
+                  </a> <!-- runScenario("Free CRM login test Sceanrio", "Free CRM login feature without Background") -->
                   <span class="method-name">runScenario</span>
-                  <span class="parameters">("Free CRM login test Sceanrio","Free CRM login feature")</span>
+                  <span class="parameters">("Free CRM login test Sceanrio","Free CRM login feature without Background")</span>
                   <em>
-(Runs Cucumber Scenarios)                  </em>
+(Runs cucumber Features)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="runScenario(&quot;Login into sauce demo&quot;, &quot;Free CRM login feature&quot;)">
-                  </a> <!-- runScenario("Login into sauce demo", "Free CRM login feature") -->
+                  <a name="runScenario(&quot;Free CRM login test Sceanrio&quot;, &quot;Free CRM login feature without Background&quot;)">
+                  </a> <!-- runScenario("Free CRM login test Sceanrio", "Free CRM login feature without Background") -->
                   <span class="method-name">runScenario</span>
-                  <span class="parameters">("Login into sauce demo","Free CRM login feature")</span>
+                  <span class="parameters">("Free CRM login test Sceanrio","Free CRM login feature without Background")</span>
                   <em>
-(Runs Cucumber Scenarios)                  </em>
+(Runs cucumber Features)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Login into sauce demo&quot;, &quot;Free CRM login feature with Background&quot;)">
+                  </a> <!-- runScenario("Login into sauce demo", "Free CRM login feature with Background") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Login into sauce demo","Free CRM login feature with Background")</span>
+                  <em>
+(Runs cucumber Features)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Default_suite-class-passed -->
-        </div> <!-- panel Default_suite -->
-        <div panel-name="test-xml-Default_suite" class="panel">
+          </div> <!-- suite-Suite-class-passed -->
+        </div> <!-- panel Suite -->
+        <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\Admin\AppData\Local\Temp\testng-eclipse--2046177819\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\Admin\eclipse-workspace\cucmbervikashmarch\testng.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite name=&quot;Default suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;Default test&quot; verbose=&quot;2&quot;&gt;
+&lt;suite data-provider-thread-count=&quot;3&quot; name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;baseTest.AnnotationTransformer&quot;/&gt;
+  &lt;/listeners&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;runner.Testrunner&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- Default test --&gt;
-&lt;/suite&gt; &lt;!-- Default suite --&gt;
+  &lt;/test&gt; &lt;!-- Test --&gt;
+&lt;/suite&gt; &lt;!-- Suite --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="testlist-Default_suite" class="panel">
+        <div panel-name="testlist-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Tests for Default suite</span>
+            <span class="header-content">Tests for Suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Default test (1 class)</span>
+                <span class="test-name">Test (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="group-Default_suite" class="panel">
+        <div panel-name="group-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Groups for Default suite</span>
+            <span class="header-content">Groups for Suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="test-group">
@@ -336,70 +408,78 @@ Session ID: fd8680663988b6d8bdc528d9aea120be
             </div> <!-- test-group -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="times-Default_suite" class="panel">
+        <div panel-name="times-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Times for Default suite</span>
+            <span class="header-content">Times for Suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="times-div">
               <script type="text/javascript">
-suiteTableInitFunctions.push('tableData_Default_suite');
-function tableData_Default_suite() {
+suiteTableInitFunctions.push('tableData_Suite');
+function tableData_Suite() {
 var data = new google.visualization.DataTable();
 data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(6);
+data.addRows(8);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'runScenario')
 data.setCell(0, 2, 'runner.Testrunner')
-data.setCell(0, 3, 21616);
+data.setCell(0, 3, 28175);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'runScenario')
 data.setCell(1, 2, 'runner.Testrunner')
-data.setCell(1, 3, 19674);
+data.setCell(1, 3, 23040);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'runScenario')
 data.setCell(2, 2, 'runner.Testrunner')
-data.setCell(2, 3, 15953);
+data.setCell(2, 3, 22702);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'runScenario')
 data.setCell(3, 2, 'runner.Testrunner')
-data.setCell(3, 3, 12268);
+data.setCell(3, 3, 22549);
 data.setCell(4, 0, 4)
 data.setCell(4, 1, 'runScenario')
 data.setCell(4, 2, 'runner.Testrunner')
-data.setCell(4, 3, 11062);
+data.setCell(4, 3, 22435);
 data.setCell(5, 0, 5)
 data.setCell(5, 1, 'runScenario')
 data.setCell(5, 2, 'runner.Testrunner')
-data.setCell(5, 3, 10787);
-window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
+data.setCell(5, 3, 20226);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'runScenario')
+data.setCell(6, 2, 'runner.Testrunner')
+data.setCell(6, 3, 19773);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'runScenario')
+data.setCell(7, 2, 'runner.Testrunner')
+data.setCell(7, 3, 17706);
+window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 minutes</span>
-              <div id="times-div-Default_suite">
-              </div> <!-- times-div-Default_suite -->
+              <span class="suite-total-time">Total running time: 2 minutes</span>
+              <div id="times-div-Suite">
+              </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="reporter-Default_suite" class="panel">
+        <div panel-name="reporter-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Reporter output for Default suite</span>
+            <span class="header-content">Reporter output for Suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="ignored-methods-Default_suite" class="panel">
+        <div panel-name="ignored-methods-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
             <span class="header-content">0 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="chronological-Default_suite" class="panel">
+        <div panel-name="chronological-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
             <span class="header-content">Methods in chronological order</span>
           </div> <!-- main-panel-header rounded-window-top -->
@@ -407,40 +487,54 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">runner.Testrunner</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
-                <span class="method-name">setUpClass(org.testng.TestRunner@74a58a06)</span>
+                <span class="method-name">setUpClass(org.testng.TestRunner@733aa9d8)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
+              <div class="configuration-class before">
+                <span class="method-name">setUpClass</span>
+                <span class="method-start">1368 ms</span>
+              </div> <!-- configuration-class before -->
               <div class="test-method">
-                <span class="method-name">runScenario("Login into sauce demo", "Free CRM login feature")</span>
-                <span class="method-start">1566 ms</span>
+                <span class="method-name">runScenario("Login into sauce demo", "Free CRM login feature with Background")</span>
+                <span class="method-start">1441 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Login into sauce demo", "Free CRM login feature with Background")</span>
+                <span class="method-start">1441 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Login into sauce demo", "Free CRM login feature with Background")</span>
+                <span class="method-start">1441 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Free CRM login test Sceanrio", "Free CRM login feature without Background")</span>
+                <span class="method-start">24001 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Login into sauce demo", "Free CRM login feature with Background")</span>
+                <span class="method-start">24148 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Free CRM login test Sceanrio", "Free CRM login feature without Background")</span>
+                <span class="method-start">29620 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">runScenario("Login into sauce demo", "Free CRM login feature")</span>
-                <span class="method-start">13841 ms</span>
+                <span class="method-name">runScenario("Login into sauce demo", "Free CRM login feature with Background")</span>
+                <span class="method-start">46587 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">runScenario("Login into sauce demo", "Free CRM login feature")</span>
-                <span class="method-start">33530 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">runScenario("Free CRM login test Sceanrio", "Free CRM login feature")</span>
-                <span class="method-start">49485 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">runScenario("Free CRM login test Sceanrio", "Free CRM login feature")</span>
-                <span class="method-start">60274 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">runScenario("Free CRM login test Sceanrio", "Free CRM login feature")</span>
-                <span class="method-start">71338 ms</span>
+                <span class="method-name">runScenario("Free CRM login test Sceanrio", "Free CRM login feature without Background")</span>
+                <span class="method-start">47044 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
+                <span class="method-name">testDownClass</span>
+                <span class="method-start">67274 ms</span>
+              </div> <!-- configuration-class after -->
+              <div class="configuration-class after">
                 <span class="method-name">tearDownClass</span>
-                <span class="method-start">92961 ms</span>
+                <span class="method-start">71120 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
