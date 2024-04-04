@@ -15,25 +15,26 @@ import io.cucumber.java.Before;
 import io.cucumber.java.Scenario;
 
 public class Hookstags  {
-private DriverFactory driverFactory;
+	private DriverFactory driverFactory;
 	private WebDriver driver;
 	@Before
 	public void launchBrowser() {
-	
-		
-		  driverFactory = new DriverFactory(); driver =
-		  driverFactory.init_driver("chrome");
-		 
-		
-		
+
+		driverFactory = new DriverFactory(); 
+		driver =				driverFactory.init_driver("chrome");
+
+
+
 	}
-	
+
 	@After
 	public void AfterScenario(Scenario sc)
 	{
 		System.out.println("AfterScenario method executed..");
 		if(sc.isFailed()==false)
 		{
+			sc.log(sc.getName() + "is failed");
+			
 			//Convert web driver object to TakeScreenshot
 
 			String fileWithPath =  System.getProperty("user.dir")+"\\Screenshot\\failedScreenshot.png";
@@ -63,15 +64,17 @@ private DriverFactory driverFactory;
 	public void afterStepmethod(Scenario sc)
 	{
 		System.out.println("afterStepmethod executed..");
-		
+
 		//Convert web driver object to TakeScreenshot
 		TakesScreenshot scrShot =((TakesScreenshot)driver);
 
 		//Call getScreenshotAs method to create image file
 		byte[] SrcFile=scrShot.getScreenshotAs(OutputType.BYTES);
-		
+
 		//attach image file
-		sc.attach(SrcFile,  "image/png", sc.getName());		
+		sc.attach(SrcFile,  "image/png", sc.getName());	
+		
+		
 	}
 
 }

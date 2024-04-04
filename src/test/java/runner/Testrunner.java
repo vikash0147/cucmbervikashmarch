@@ -6,6 +6,7 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
+import baseTest.UploadExtentReport;
 import io.cucumber.testng.AbstractTestNGCucumberTests;
 import io.cucumber.testng.CucumberOptions;
 import io.cucumber.testng.FeatureWrapper;
@@ -15,7 +16,9 @@ import io.cucumber.testng.TestNGCucumberRunner;
 @CucumberOptions(tags = "", features = "src/test/resources/features", glue = { "stepdefnitions" },
 
 plugin = { "pretty", "html:target/cucumber-reports.html", "json:target/cucumber.json",
-"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:" }, 
+"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:",
+"io.qameta.allure.cucumber7jvm.AllureCucumber7Jvm",
+		"rerun:target/failedRerunSceanrio.txt"}, 
 monochrome = true, dryRun = false, publish = true)
 public class Testrunner extends AbstractTestNGCucumberTests   {
 
@@ -44,6 +47,7 @@ public class Testrunner extends AbstractTestNGCucumberTests   {
 	 
 
 	@AfterClass(alwaysRun = true) public void testDownClass() {
+		UploadExtentReport.UploadReport();
 		testNGCucumberRunner.finish(); }
 
 

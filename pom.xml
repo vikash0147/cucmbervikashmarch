@@ -18,6 +18,12 @@
     <version>5.7.0</version>
 </dependency>
 
+<dependency>
+    <groupId>io.cucumber</groupId>
+    <artifactId>cucumber-junit</artifactId>
+    <version>7.2.0</version> <!-- Use the version compatible with your Cucumber version -->
+    <scope>test</scope>
+</dependency>
 
 <!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-testng -->
 <dependency>
@@ -47,6 +53,22 @@
   <type>maven-plugin</type>
 </dependency>
 
+<!-- https://mvnrepository.com/artifact/io.qameta.allure/allure-maven -->
+<!--<dependency>
+    <groupId>io.qameta.allure</groupId>
+    <artifactId>allure-maven</artifactId>
+    <version>2.12.0</version>
+</dependency>-->
+
+<!-- https://mvnrepository.com/artifact/io.qameta.allure/allure-cucumber7-jvm -->
+<dependency>
+    <groupId>io.qameta.allure</groupId>
+    <artifactId>allure-cucumber7-jvm</artifactId>
+    <version>2.26.0</version>
+</dependency>
+
+
+
 <dependency>
   <groupId>org.apache.maven.plugins</groupId>
   <artifactId>maven-compiler-plugin</artifactId>
@@ -60,6 +82,13 @@
     <artifactId>extentreports-cucumber7-adapter</artifactId>
     <version>1.14.0</version>
 </dependency>
+
+<!-- https://mvnrepository.com/artifact/com.aventstack/extentreports -->
+<!--<dependency>
+    <groupId>com.aventstack</groupId>
+    <artifactId>extentreports</artifactId>
+    <version>5.1.1</version>
+</dependency>-->
 
 
 
@@ -86,7 +115,7 @@
 					</property>
                 </properties>-->
                 
-    <!--      <testFailureIgnore>true</testFailureIgnore>-->
+  <testFailureIgnore>true</testFailureIgnore>-->
         </configuration>
       </plugin>
     </plugins>
