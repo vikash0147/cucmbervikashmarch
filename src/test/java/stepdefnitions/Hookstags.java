@@ -15,15 +15,15 @@ import io.cucumber.java.Before;
 import io.cucumber.java.Scenario;
 
 public class Hookstags  {
-	private DriverFactory driverFactory;
+	//private DriverFactory driverFactory;
 	private WebDriver driver;
 	@Before
 	public void launchBrowser() {
 
-		driverFactory = new DriverFactory(); 
-		driver =				driverFactory.init_driver("chrome");
+		//driverFactory = new DriverFactory(); 
+		driver =DriverFactory.init_driver("chrome");
 
-
+		System.out.println("public void launchBrowser()");
 
 	}
 
@@ -45,6 +45,11 @@ public class Hookstags  {
 
 			//Move image file to new destination
 			File DestFile=new File(fileWithPath);
+			
+			byte[] SrcFile1=scrShot.getScreenshotAs(OutputType.BYTES);
+
+			//attach image file
+			sc.attach(SrcFile1,  "image/png", sc.getName());	
 
 			//Copy file at destination
 

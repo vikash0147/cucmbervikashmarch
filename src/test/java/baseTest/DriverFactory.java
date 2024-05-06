@@ -1,22 +1,18 @@
 package baseTest;
 
-import java.time.Duration;
+
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.safari.SafariDriver;
 
-import io.cucumber.java.Before;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class DriverFactory {
 	
-	public   WebDriver driver;
 	
-
-
 	public static ThreadLocal<WebDriver> tlDriver = new ThreadLocal<>();
 
 	/**
@@ -26,7 +22,7 @@ public class DriverFactory {
 	 * @param browser
 	 * @return this will return tldriver.
 	 */
-	public WebDriver init_driver(String browser) {
+	public static WebDriver init_driver(String browser) {
 
 		System.out.println("browser value is: " + browser);
 
