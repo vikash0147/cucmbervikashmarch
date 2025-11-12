@@ -4,7 +4,7 @@ Background: Login into sauce demo background
 		Given user is already on login page
     When title of login page is Free CRM
    
-  Scenario Outline: SC_1:-Login into sauce demo
+  Scenario Outline: SC_1 Login into sauce demo 2 set data
   	Given user enters "<username>" and "<password>"
     Then user clicks on login button
     Then user is on home page    
@@ -18,7 +18,7 @@ Background: Login into sauce demo background
       | standard_user    						| secret_sauce 	| Tom       | Peter    | Manager  |
       | problem_user                | secret_sauce  | Tommy     |Dsouza    | Director |
       
- Scenario Outline: SC_2:-Login into sauce demo
+ Scenario Outline: SC_2 Login into sauce demo with 3 set data
   	Given user enters "<username>" and "<password>"
     Then user clicks on login button
     Then user is on home page    
@@ -31,3 +31,4 @@ Background: Login into sauce demo background
       | username         						| password 			| firstname | lastname | position |
       | problem_user                | secret_sauce  | Tommy     |Dsouza    | Director |
       | performance_glitch_user     | secret_sauce  | David     | Dsouza   | Director |
+      | standard_user    						| secret_sauce 	| Tom       | Peter    | Manager  |

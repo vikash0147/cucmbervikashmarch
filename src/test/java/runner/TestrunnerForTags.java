@@ -27,34 +27,36 @@ glue = {"stepdefnitions"},
         dryRun = false,
         publish = true)
 public class TestrunnerForTags extends AbstractTestNGCucumberTests {
-/*	
-	private TestNGCucumberRunner testNGCucumberRunner;
-	   
-	@BeforeClass(alwaysRun = true)
-	public void setUpClass() {
-		testNGCucumberRunner = new TestNGCucumberRunner(this.getClass());
-	}
-	@SuppressWarnings("unused")
-	@Test(groups = "cucumber", description = "Runs cucmber Features", dataProvider = "scenarios")
-	public void runScenario(PickleWrapper pickleWrapper) {
-		//testNGCucumberRunner.runCucumber(cucumberFeature);
-		//testNGCucumberRunner.runCucumber(cucumberFeature.getCucumberFeature());
-		 testNGCucumberRunner.runScenario(pickleWrapper.getPickle());
-	}
-
-	@DataProvider
-	public Object[][] scenarios() {
-		return super.scenarios();
-		//return testNGCucumberRunner.provideScenarios();
-		
-	}
-
-	@AfterClass(alwaysRun = true)
-	public void testDownClass() {
-		testNGCucumberRunner.finish();
-	}
 	
-	*/
+	  private TestNGCucumberRunner testNGCucumberRunner;
+	  
+	  @BeforeClass(alwaysRun = true) 
+	  public void setUpClass() {
+	  testNGCucumberRunner = new TestNGCucumberRunner(this.getClass()); }
+	  
+	  @SuppressWarnings("unused")
+
+		@Test(groups = "cucumber", description = "Runs cucumber Features",	dataProvider = "scenarios") 
+		public void runScenario(PickleWrapper			pickleWrapper ,  FeatureWrapper featureWrapper) {
+			//testNGCucumberRunner.runCucumber(cucumberFeature);
+			//testNGCucumberRunner.runCucumber(cucumberFeature.getCucumberFeature());
+			testNGCucumberRunner.runScenario(pickleWrapper.getPickle());
+			System.out.println("@Test(groups = \"cucumber\", description = \"Runs cucumber Features\",	dataProvider = \"scenarios\")") ;	
+		}
+
+		@DataProvider (parallel = false)
+		public Object[][] scenarios() { 
+			System.out.println("@DataProvider (parallel = true)") ;
+			return	  super.scenarios(); 
+			//return testNGCucumberRunner.provideScenarios();
+			 
+		}
+		 
+	  
+	  @AfterClass(alwaysRun = true) public void testDownClass() {
+	  testNGCucumberRunner.finish(); }
+	  
+	 
 }
 
 
